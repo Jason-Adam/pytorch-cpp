@@ -10,8 +10,11 @@ unzip libtorch-macos-1.3.1.zip
 
 Please note that this is the distribution for MacOS with no CUDA.  
 
+## Generative Adversarial Network (GAN)  
+The program will Generative Adversarial Network (GAN) on the MNIST data set. A GAN consists of two distinct neural network models, the generator and the discriminator. The most basic definition is that a generator produces images from noise distribution to resemble images from the target distribution (i.e. the MNIST digits), and the discriminator provides a probability of how real or fake those images are. The generator uses this as feedback training input to produce more realistic images.
+
 ## Running the Program  
-The program will run a Convolutional Neural Network on the MNIST data set.  You can download the data set with the following command:  
+You can download the data set with the following command:  
 
 ```bash  
 python3 download_mnist.py  
@@ -24,3 +27,20 @@ cd build
 cmake -DCMAKE_PREFIX_PATH=/Users/jasonadam/github/pytorch-cpp/libtorch ..  
 make && ./pytorch-cpp  
 ```  
+
+## Output  
+The generator periodically outputs fake images. Below are images from the first to the last (120). The were produced as the generator became better at fooling the discriminator.  
+
+*Sample 1*  
+![](imgs/sample-1.png)  
+
+*Sample 40*  
+![](imgs/sample-40.png)  
+
+*Sample 80*  
+![](imgs/sample-80.png)  
+
+*Sample 120*  
+![](imgs/sample-120.png)  
+
+We can throughout the progression of the images, that the generator has become much better at producing images that represent hand-written digits.
