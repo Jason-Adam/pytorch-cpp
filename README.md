@@ -29,7 +29,7 @@ make && ./pytorch-cpp
 ```  
 
 ## Output  
-The generator periodically outputs fake images. Below are images from the first to the last (120). The were produced as the generator became better at fooling the discriminator.  
+The generator periodically outputs fake images. Below are images from the first to the last (120). They were produced as the generator became better at fooling the discriminator.  
 
 *Sample 1*  
 ![](imgs/sample-1.png)  
@@ -43,4 +43,4 @@ The generator periodically outputs fake images. Below are images from the first 
 *Sample 120*  
 ![](imgs/sample-120.png)  
 
-We can throughout the progression of the images, that the generator has become much better at producing images that represent hand-written digits.
+We can see that throughout the progression of the images, the generator has become much better at producing images that represent hand-written digits.
