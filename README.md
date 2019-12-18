@@ -11,7 +11,7 @@ unzip libtorch-macos-1.3.1.zip
 Please note that this is the distribution for MacOS with no CUDA.  
 
 ## Generative Adversarial Network (GAN)  
-The program will Generative Adversarial Network (GAN) on the MNIST data set. A GAN consists of two distinct neural network models, the generator and the discriminator. The most basic definition is that a generator produces images from noise distribution to resemble images from the target distribution (i.e. the MNIST digits), and the discriminator provides a probability of how real or fake those images are. The generator uses this as feedback training input to produce more realistic images.
+The program will train a Generative Adversarial Network (GAN) on the MNIST data set. A GAN consists of two distinct neural network models, the generator and the discriminator. The most basic definition is that a generator produces images from noise distribution to resemble images from the target distribution (i.e. the MNIST digits), and the discriminator provides a probability of how real or fake those images are. The generator uses this as feedback training input to produce more realistic images.
 
 ## Running the Program  
 You can download the data set with the following command:  
