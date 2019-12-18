@@ -33,7 +33,6 @@
 
 # Misc
 *.swp
-libtorch/
 
 # Py
 .mypy_cache/

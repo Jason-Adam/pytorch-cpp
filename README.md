@@ -20,6 +20,7 @@ python3 download_mnist.py
 The model training can be run by the following sequence of commands. You should see the epoch output in the terminal after the final command is run.  
 
 ```bash  
+cd build  
 cmake -DCMAKE_PREFIX_PATH=/Users/jasonadam/github/pytorch-cpp/libtorch ..  
 make && ./pytorch-cpp  
 ```  
