@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
+project(pytorch-cpp)
+
+find_package(Torch REQUIRED)
+
+add_executable(pytorch-cpp dcgan.cpp)
+target_link_libraries(pytorch-cpp "${TORCH_LIBRARIES}")
+set_property(TARGET pytorch-cpp PROPERTY CXX_STANDARD 11)
+
+if (MSVC)
+  file(GLOB TORCH_DLLS "${TORCH_INSTALL_PREFIX}/lib/*.dll")
+  add_custom_command(TARGET pytorch-cpp 
+                     POST_BUILD
+                     COMMAND ${CMAKE_COMMAND} -E copy_if_different
+                     ${TORCH_DLLS}
+                     $<TARGET_FILE_DIR:pytorch-cpp>)
+endif (MSVC)

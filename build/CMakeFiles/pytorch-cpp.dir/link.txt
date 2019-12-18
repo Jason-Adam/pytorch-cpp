@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/pytorch-cpp.dir/dcgan.cpp.o  -o pytorch-cpp  -Wl,-rpath,/Users/jasonadam/github/pytorch-cpp/libtorch/lib ../libtorch/lib/libc10.dylib ../libtorch/lib/libtorch.dylib ../libtorch/lib/libc10.dylib 
