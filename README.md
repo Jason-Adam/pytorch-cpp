@@ -1,4 +1,4 @@
-# LibTorch C++ Tutorial  
+# PyTorch C++ Tutorial  
 This repo follows along with the PyTorch C++ tutorial [here](https://pytorch.org/tutorials/advanced/cpp_frontend.html).  
 
 The LibTorch distribution is needed for this tutorial. Navigate into your project directory and run the following:  
